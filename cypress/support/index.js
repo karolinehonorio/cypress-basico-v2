@@ -1,20 +1,23 @@
-// ***********************************************************
-// This example support/index.js is processed and
-// loaded automatically before your test files.
+/// <tipos de referência="cypress" />
+// ************************************************ ***********
+// Este exemplo plugins/index.js pode ser usado para carregar plugins
 //
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
+// Você pode alterar a localização deste arquivo ou desativar o carregamento
+// o arquivo de plugins com a opção de configuração 'pluginsFile'.
 //
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+// Você pode ler mais aqui:
+// https://on.cypress.io/plugins-guide
+// ************************************************ ***********
 
-// Import commands.js using ES2015 syntax:
+// Esta função é chamada quando um projeto é aberto ou reaberto (por exemplo, devido a
+// alteração da configuração do projeto)
+
+/**
+* @type {Cypress.PluginConfig}
+
+*/
 import './commands'
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+// eslint-disable-next-line no-unused-vars
+    // `on` é usado para se conectar a vários eventos que o Cypress emite
+    // `config` é a configuração do Cypress resolvida
+  
